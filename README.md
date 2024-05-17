@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+### Grid-Flex-Practice (실습)
+---
+반응형 웹에 대한 이해를 위해 Grid, Flex 레이아웃을 실습해봤습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 목표
+---
+ - Grid, Flex를 이용해서 반응형 웹 만들어보기
+ - Grid와 Flex의 최대한 많은 요소들을 이용해보기
+ - json server, axios 로 비동기 처리 경험해보기
 
-## Available Scripts
+### 실행
+---
+node.js (18.20.2 이상)
+```
+//grid-flex-practice
+npm install
+npm start
+```
 
-In the project directory, you can run:
+```
+//my-json-server
+npm install json-server
+npm start
+```
 
-### `npm start`
+### 구현 내용
+---
+클라이언트는 react, 서버는 json server을 사용했습니다. 
+이번 프로젝트의 목표는 반응형 웹의 구현이었습니다. 다양한 방법이 있지만 저는 Grid, Flex라는 요소를 사용하기로 했습니다.
+전체 뼈대를 만드는 데에는 Grid를, 요소들의 구성요소 정렬에는 Flex를 이용하여 깔끔한 ui를 만드는 것에 초점을 뒀습니다.
+그리고 json-server을 이용해 3001번 포트에 간단한 서버를 만들어 axios 라이브러리를 이용하여 요소의 제목과 내용을 가져오는 것을 구현했습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 느낀점
+---
+프론트엔드를 공부할수록, 그리고 프로젝트를 만들면 만들수록 디자인적으로 아쉽다는 생각을 많이 했습니다. 그중에서 특히 반응형에 대한 아쉬움을 저 자신도 느꼈고 피드백에서도 항상 느꼈습니다. 그동안 반응형 웹을 약간 등한시 했던 이유는 손이 너무 많이 가지 않을까 하는 막연한 두려움 이었습니다. 그러나 이번에 공부를 하면서 느낀점은 처음 기획단에서 ui를 구상해두고 시작하면 생각보다 그렇게 손이 많이 가지 않는다는 것을 느꼈고 사전 기획이 정말 중요하다는 사실을 느꼈습니다. 앞으로 진행할 프로젝트에는 기획단계에서 사용할 기술스택, 서비스 내용 뿐만 아니라 ui/ux 적으로도 고민을 많이 한 후 프로젝트를 시작해야겠다는 생각을 했습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
